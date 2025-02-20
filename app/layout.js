@@ -1,4 +1,4 @@
-import { Poppins, Merri as Merriweather } from "next/font/google";
+import { Poppins, Merriweather } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -6,7 +6,7 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
 });
 
-const merri = Merriweather({
+const merriweather = Merriweather({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${poppins.className} ${merri.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
+        className={`${poppins.className} ${merriweather.className}  antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
       >
         {children}
       </body>
